@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class diziornek9 {
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+
+        // Matris boyutunu alın
+        System.out.print("N sayisini giriniz (1-30): ");
+        int N = scan.nextInt();
+
+        // A matrisinin elemanlarını alın
+        System.out.println("A matrisinin elemanlarini giriniz: ");
+        int[][] A = new int[3][2];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 2; j++) {
+                A[i][j] = scan.nextInt();
+            }
+        }
+
+        // B matrisinin elemanlarını alın
+        System.out.println("B matrisinin elemanlarini giriniz: ");
+        int[][] B = new int[2][4];
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 4; j++) {
+                B[i][j] = scan.nextInt();
+            }
+        }
+
+        // Matris çarpımını hesaplayın
+        int[][] C = new int[3][4];
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 4; j++) {
+                for (int k = 0; k < 2; k++) {
+                    C[i][j] += A[i][k] * B[k][j];
+                }
+            }
+        }
+
+        // Matris çarpımını yazdırın
+        System.out.println("A x B matrisinin çarpimi:");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 4; j++) {
+                System.out.print(C[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
