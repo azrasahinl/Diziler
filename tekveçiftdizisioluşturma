@@ -1,0 +1,32 @@
+
+package büthazırlık;
+
+import java.util.Scanner;
+
+public class büthazırlıkdizi4 {
+ //Klavyeden 10 tane sayı giriliyor bu sayı tekse tek dizisine çifte çift dizisine atansın sonra da dizileri yazdır.
+    public static void main(String[] args) {
+        Scanner k=new Scanner(System.in);
+        int cift[]=new int[10];
+        int tek[]=new int[10];
+        for (int i = 0; i < 10; i++) {
+            int sayı=k.nextInt();
+            if(sayı%2==0){
+            cift[i]=sayı;}
+            else
+            tek[i]=sayı;
+            
+        }
+        System.out.println("Tek sayilar:");
+        for (int i = 0; i < tek.length; i++) {
+            if(tek[i]!=0)
+            System.out.println(tek[i]+" ");
+        }
+        System.out.println("cift sayilar");
+        for (int i = 0; i < cift.length; i++) {
+            if(cift[i]!=0)
+            System.out.println(cift[i]+" ");
+        }
+        
+    }
+}
