@@ -1,0 +1,29 @@
+
+
+package javaapplication8;
+
+import java.util.Scanner;
+
+public class enkucuksayınınindisi {
+ //Kendisine parametre olarak gelen tamsayı dizisindeki en küçük sayının indisini döndüren metod
+    public static int enkucukindis(int a[]){
+        int enkucuk=a[0];
+        int indis=0;
+        for (int i = 1; i <a.length; i++) {
+            if (a[0]<a[i]) {
+               enkucuk=a[i];
+               indis=i;
+            }
+        }
+        return indis;
+    }
+    public static void main(String[] args) {
+        Scanner k=new Scanner(System.in);
+        int dizi[]=new int[5];
+        for (int i = 0; i <dizi.length; i++) {
+            dizi[i]=k.nextInt();
+        }
+        int b=enkucukindis(dizi);
+        System.out.println(b);
+    }
+}
