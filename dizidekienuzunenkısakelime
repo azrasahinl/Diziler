@@ -1,0 +1,19 @@
+//String bir dizi tanımlayarak bu dizideki en uzun ve en kısa kelimeyi bulan ve ekrana
+//yazan kodu yazınız.
+package algo.örnek.sorular;
+public class metodornek6 {
+    public static void main(String[] args) {
+    String dizi[]={"Java","Emine","Ali"};
+    String enkısa=dizi[0];
+    String enuzun=dizi[0];
+        for (int i = 1; i <dizi.length; i++) {
+            if(enuzun.length()<dizi[i].length()){
+                enuzun=dizi[i];}
+            if(enkısa.length()>dizi[i].length()){
+                enkısa=dizi[i];}
+            
+        }System.out.println("En uzun kelime:"+enuzun);
+         System.out.println("En kisa kelime:"+enkısa);
+    }
+   } 
+
