@@ -1,0 +1,30 @@
+
+package javaapplication8;
+
+import java.util.Scanner;
+
+
+public class diziler9 {
+    public static void main(String[] args) {
+        Scanner k= new Scanner(System.in);
+        int A[][]=new int [3][4];
+        int t=0;
+         for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 4; j++) {
+                A[i][j]=k.nextInt();
+                t=t+A[i][j];
+            }
+         }
+         double ort=(double)t/12.0;
+         System.out.println(ort);
+         for (int i = 0; i < 3; i++) {
+             for (int j = 0; j < 4; j++) {
+                 if(A[i][j]<ort){
+                     System.out.println(A[i][j]+" "+i+" "+j);
+                 }
+                 
+             }
+            
+        }
+    }
+}
