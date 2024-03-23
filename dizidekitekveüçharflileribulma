@@ -1,0 +1,32 @@
+  //klavyeden girilen 20 tane string içindeki tek karakterli olanları ya da 
+ //3 karakterli olanları bulup ekrana yazan programı yazınız.
+package javaapplication8;
+
+import java.util.Scanner;
+
+
+public class diziler6 {
+  
+    public static void main(String[] args) {
+         String ad[]= new String[20];
+        Scanner k=new Scanner(System.in);
+        String bir = " ";
+        String uc = " ";
+        for (int i = 0; i < 20; i++) {
+            ad[i]=k.next();
+       
+            if(ad[i].length()==1){
+            bir = bir + ad[i];
+            }
+            else if(ad[i].length()==3){
+                    uc = uc+ ad[i];
+                    
+                    }
+            
+        } 
+        System.out.println("Tek harfliler  : "+bir);
+        System.out.println("Uc harfliler  : "+uc);
+    }
+    
+}
+
