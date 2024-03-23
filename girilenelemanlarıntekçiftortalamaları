@@ -1,0 +1,33 @@
+
+package algo.örnek.sorular;
+
+import java.util.Scanner;
+
+public class diziornek3 {
+ // Büyüklüğü 10 olan bir dizin oluşturun. Bilgisayarınıza tam sayı girişi yapacaksınız.
+//Programınız girilen tek ve çift sayıların ortalamasını ayrı bulan programı yazınız?  
+    public static void main(String[] args) {
+        Scanner k=new Scanner(System.in);
+        int dizi[]=new int[10];
+        double tekort=0.0;
+        double ciftort=0.0;
+        int toplam1=0;
+        int toplam2=0;
+        int sayac1=0;
+        int sayac2=0;
+        for (int i = 0; i < 10; i++) {
+            dizi[i]=k.nextInt();
+            if(dizi[i]%2==0){
+              sayac1++;
+              toplam1+=dizi[i];
+              ciftort=toplam1/sayac1;
+              
+            }else{
+                sayac2++;
+                toplam2+=dizi[i];
+                tekort=toplam2/sayac2;
+            }
+        }  System.out.println("Ciftlerin ortalamasi:"+ciftort);
+        System.out.println("Teklerin ortalamasi:"+tekort);
+    }
+}
