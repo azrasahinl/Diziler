@@ -1,0 +1,36 @@
+//Klavyeden girilmiş olan iki boyutlu string dizisi içindeki tek karakterlere sahip olanları ekrana yazan method
+
+package büthazırlık;
+
+import java.util.Scanner;
+
+public class bürhazırlık2022_3 {
+public static String[] tekkarakter(String a[][]){
+    String yeni[]=new String[4];
+    int m=0;
+    for (int i = 0; i <a.length; i++) {
+        for (int j = 0; j <a[0].length; j++) {
+            if(a[i][j].length()==1){
+              yeni[m]=a[i][j];
+              m++;}
+            }
+        }
+    return yeni;
+    }
+    public static void main(String[] args) {
+       Scanner k=new Scanner(System.in);
+       String c[]=new String[4];
+       String b[][]=new String[2][2];
+        for (int i = 0; i <2; i++) {
+            for (int j = 0; j < 2; j++) {
+                b[i][j]=k.next();
+            }
+        }
+        c=tekkarakter(b);
+        for (int i = 0; i < c.length; i++) {
+            if(c[i]!=" "){
+            System.out.println(c[i]);}
+        }
+    }
+}    
+
