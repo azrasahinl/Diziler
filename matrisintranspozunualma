@@ -1,0 +1,37 @@
+
+package javaapplication8;
+
+import java.util.Scanner;
+
+public class dizilercuma5 {
+    //700,600,650     //700,900,300
+    //900,800,700     //600,800,400
+    //300,400,350     //650,700,350
+    public static void main(String[] args) {
+        Scanner k= new Scanner(System.in);
+        int matris[][]=new int[][]{{700,600,650},{900,800,700},{300,400,350}};
+         int transpose[][] = new int[3][3];
+         System.out.println("Matris=");
+          for (int i = 0; i <3; i++) {
+            for (int j = 0; j <3; j++) {
+                 System.out.print(matris[i][j]+" ");
+            }
+              System.out.println(" ");
+               
+            }
+          System.out.println("Matrisin transposeu=");
+        for (int i = 0; i <3; i++) {
+            for (int j = 0; j <3; j++) {
+                transpose[i][j]=matris[j][i];
+                System.out.print(transpose[i][j]+" ");
+           }
+            System.out.println("");
+       }
+    }
+}
+        
+        
+                
+        
+    
+
