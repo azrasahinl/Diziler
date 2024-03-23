@@ -1,0 +1,19 @@
+
+package algo.örnek.sorular;
+public class diziornek12 {
+    public static void main(String[] args) {
+int[] my_array = {25, 14, 56, 15, 36, 56, 77, 18, 29, 49};
+int max = my_array[0];
+int min = my_array[0];
+int len = my_array.length;
+for (int i = 1; i < len - 1; i++) {
+if (my_array[i] > max)
+max = my_array[i];
+if (my_array[i] < min)
+min = my_array[i];
+}
+System.out.println("Maximum value for the above array = " + max);
+System.out.println("Minimum value for the above array = " + min);
+    }
+   
+}
