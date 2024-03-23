@@ -1,0 +1,33 @@
+
+package javaapplication8;
+
+import java.util.Scanner;
+public class diziler10 {
+    public static void main(String[] args) {
+        
+    
+   //Dizinin satırları ve sütunları toplamını ekrana yazan programı yazınız.
+    Scanner k= new Scanner(System.in);
+     int A[][]=new int [3][4];
+     int toplam1=0;
+     int toplam2=0;
+         for(int i = 0; i < 3; i++){
+            for (int j = 0; j < 4; j++) {
+                A[i][j]=k.nextInt();
+                toplam1=toplam1+A[i][j];
+            }
+             System.out.println(toplam1);
+             toplam1=0;
+            }
+         for (int j = 0; j < 3; j++) {
+             for (int i = 0; i < 4; i++) {
+            A[i][j]=k.nextInt();
+            toplam2=toplam2+A[i][j];
+            }
+         }
+         System.out.println(toplam2);
+         toplam2=0;
+         }
+    
+}
+
