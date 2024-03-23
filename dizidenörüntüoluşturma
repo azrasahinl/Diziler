@@ -1,0 +1,20 @@
+//Bir boyutlu dizin (tam sayı) kullanarak aşağıdaki şekli elde edecek bir program
+//yazınız.
+//1 2 3 4 5
+//1 2 3 4
+//1 2 3
+//1 2
+//1
+package algo.örnek.sorular;
+public class diziornek4 {
+    public static void main(String[] args) {
+        int dizi[]={1,2,3,4,5};
+        for (int i =dizi.length-1; i >=0; i--) {
+            for (int j = 0; j <=i; j++) {
+                System.out.print(dizi[j]+" ");
+            }
+            System.out.println("");
+        }
+    }
+  
+}
