@@ -1,0 +1,29 @@
+
+
+package javaapplication8;
+
+
+import java.util.Scanner;
+
+
+public class diziler11 {
+    //İki boyutlu string dizisi klavyeden giriliyor 
+    //Bu diziyi tek bir stringe dönüştüren programı yapınız.
+    public static void main(String[] args) {
+      Scanner k= new Scanner(System.in);
+      String s[][]=new String[2][3];
+      String str=" ";
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j <3; j++) {
+                s[i][j]=k.next();
+       str=str+s[i][j]; 
+            }
+        }
+        System.out.println(str);
+                
+            }
+            
+        }
+
+
+
