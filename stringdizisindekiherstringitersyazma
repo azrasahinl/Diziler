@@ -1,0 +1,22 @@
+
+package büthazırlık;
+
+import java.util.Scanner;
+
+public class büthazırlıkdizi2 {
+    public static void main(String[] args) {
+          //klavyeden girilen 3 elemanlı string dizisindeki her bir indisini tersten yazan
+          Scanner k=new Scanner(System.in);
+          String a[]=new String[3];
+          String str="";
+          for (int i = 0; i < a.length; i++) {
+              a[i]=k.next();
+              for (int j =a[i].length()-1; j >= 0; j--) {
+                  str+=a[i].charAt(j);
+              }
+        }
+          System.out.println(str);
+          System.out.println(" ");
+    }
+  
+}
