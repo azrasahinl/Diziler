@@ -1,0 +1,25 @@
+
+package javaapplication8;
+
+import java.util.Scanner;
+
+
+public class dizilerödevsorusu2 {
+    public static void main(String[] args) {
+//Klavyeden rastgele 10 adet string giriliyor.Bu stringler içinde en uzun karaktere sahip ilk stringi ve bunun yerinin kaçıncı indis olduğunu ekrana yazan programı yapınız.
+        Scanner k = new Scanner(System.in);
+        String dizi[]=new String[10];
+        String enuzun=dizi[0];
+        enuzun="";
+        int imax=0;
+        for (int i = 0; i <dizi.length; i++) {
+            dizi[i]=k.next();
+            if (enuzun.length()<dizi[i].length()) {
+                enuzun=dizi[i];
+                imax=i; 
+            }
+        }
+        System.out.println("En uzun string dizinin"+imax+". indisindeki:"+enuzun+"stringidir");
+        
+    }
+}
